@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	let disposable = vscode.commands.registerCommand('extension.searchUnderCursor', () => {
+	let disposable = vscode.commands.registerCommand('extension.searchFileUnderCursor', () => {
 		let editor = vscode.window.activeTextEditor;
 		if (!editor) {
 			return;
@@ -14,12 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		let wordText = editor.document.getText(wordRange);
 
-		vscode.commands.executeCommand('workbench.action.findInFiles', {
-			query: wordText,
-			triggerSearch: true,
-			matchWholeWord: true,
-			isCaseSensitive: true,
-		});
+		vscode.commands.executeCommand('workbench.action.quickOpen', wordText);
 	});
 
 	context.subscriptions.push(disposable);

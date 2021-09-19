@@ -1,10 +1,10 @@
 {
-	"name": "search-under-cursor",
-	"displayName": "Search Under Cursor",
-	"description": "Triggers project-wide search with the word under the cursor.",
+	"name": "search-file-under-cursor",
+	"displayName": "Search File Under Cursor",
+	"description": "Triggers Quick Open with the word under the cursor.",
 	"icon": "icon.png",
-	"publisher": "DavidSanders",
-	"repository": "https://github.com/davesque/search-under-cursor",
+	"publisher": "Mikołaj Rozwadowski",
+	"repository": "https://github.com/hejmsdz/search-file-under-cursor",
 	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.35.0"
@@ -13,14 +13,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.searchUnderCursor"
+		"onCommand:extension.searchFileUnderCursor"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.searchUnderCursor",
-				"title": "Search Under Cursor"
+				"command": "extension.searchFileUnderCursor",
+				"title": "Search File Under Cursor"
 			}
 		]
 	},
