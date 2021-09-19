@@ -3,7 +3,7 @@
 	"displayName": "Search File Under Cursor",
 	"description": "Triggers Quick Open with the word under the cursor.",
 	"icon": "icon.png",
-	"publisher": "Mikołaj Rozwadowski",
+	"publisher": "hejmsdz",
 	"repository": "https://github.com/hejmsdz/search-file-under-cursor",
 	"version": "0.1.0",
 	"engines": {
