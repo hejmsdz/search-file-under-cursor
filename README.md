@@ -4,7 +4,7 @@ Triggers "Quick Open" action with the word under the cursor.
 
 ## Usage
 
-![](search-under-cursor.mov.gif)
+![](search-file-under-cursor.mov.gif)
 
 To use, bind a key to the `extension.searchFileUnderCursor` action. Or, execute
 the "Search File Under Cursor" action from the command palette.
